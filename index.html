@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PERSONAL PORTFOLIO</title>
+        <link rel="stylesheet" href="style.css">
+     </head>
+     
+
+   <body>
+<div id="header">
+   <div class="container">
+      <nav>
+   <img src="imagesfolder/logo1.png" class="logo1">
+         <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+         </ul>
+      </nav>
+      <div class="header-text">
+         <p>Web Developer</p>
+         <h1>
+            Hi, I'm <span>Anusri</span>Patibandla <br>From IT department
+         </h1>
+         
+      </div>
+   </div>
+</div>
+<!---------------about----------------->
+<div id="about">
+   <div class="container">
+      <div class="row">
+      <div class="about-col-1">
+      
+      </div>
+      <div class="about-col-2">
+      <h1 class="sub-title">About Me</h1>
+      <p>Me IT engineering i am very interested to know more about new things which admires my life towards the society.
+         In engineering, you'll end up constantly finding new ways to unravel problems. 
+         If you truly want to be an engineer, the challenges you will face will just make things more interesting. Overcoming obstacles will help sharpen your mind, helping you deal with problems not only in the engineering but in your life as well.
+      </p>
+      <div class="tab-title">
+         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+         <p class="tab-links" onclick="opentab('education')">Education</p>
+
+      </div>
+<div class="tab-contents active-tab" id="skills">
+   <ul>
+      <li><span>Web development</span><br> web developer</li>
+      <li><span>programming skills</span><br>Java,python</li>
+      <li><span>Android development</span><br>Android app development</li>
+      <li><span>Dev ops</span><br>Developer</li>
+   </ul>
+</div>
+<div class="tab-contents" id="education">
+   <ul>
+      <li><span>2020 - current</span><br> Studying BTECH from IT DEPT in VNITSW </li>
+      <li><span>2018-20</span><br>INTERMEDIATE  at AP MODEL JUNIOR COLLEGE in palleguntha</li>
+      <li><span>2017-18</span><br>Secondary education at Ap model school</li>
+   
+   </ul>
+</div>
+      
+   </div>
+</div>
+</div>
+</div>
+<!------------portfolio--------->
+<div class="portfolio">
+   <div class="container">
+      <h1 class="sub-title">My Special Skills</h1>
+      <div class="work-list">
+         <div class="work">
+            <img src="imagesfolder/web.png">
+            <div class="layer">
+               <h3>web design</h3>
+               <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+            </div>
+
+         </div>
+         <div class="work">
+            <img src="imagesfolder/dev.png">
+            <div class="layer">
+               <h3>Devops</h3>
+               <p>DevOps is a set of practices that combines software development and IT operations.</p>
+            </div>
+         </div>
+         <div class="work">
+            <img src="imagesfolder/java.png">
+            <div class="layer">
+               <h3>Java</h3>
+               <p>Java is a well-known server-side programming language that is often used for constructing web applications.</p>
+            </div>
+         </div>
+      </div>
+
+   </div>
+</div>
+<!----------contact me---------------->
+<div class="container">
+   <div class="row">
+      <div class="contact-left">
+         <h1 class="sub-title">Contact Me</h1><br><br>
+      
+            <div class="social-icons">
+
+            </div>
+            <h3>ANUSRI</h3>
+            <h3>patibandlaanusri@gmail.com</h3>
+           <script>
+               var tablinks = document.getElementsByClassName("tab-links");
+               var tabcontents = document.getElementsByClassName("tab-contents");
+               function opentab(tabname){
+                   for(tablink of tablinks){
+                       tablink.classList.remove("active-links");
+                   }
+                   for(tabcontent of tabcontents){
+                       tabcontent.classList.remove("active-tab");
+                   }
+                   event.currentTarget.classList.add("active-links");
+                   document.getElementById(tabname).classList.add("active-tab");
+           
+               }
+           </script>
+      </div>
+
+
+   
+   </div>
+</div>
+</div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+   for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+
+   }
+   for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+
+   }
+
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+
+
+</script>
+</body>
+
+</html>
